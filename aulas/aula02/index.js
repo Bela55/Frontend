@@ -24,9 +24,12 @@ function Rodape() {
 }
 
 function FormLogin() {
+    const button = Botao("Entrar");
+
     const form = document.createElement("form");
     form.setAttribute("action", "");
     form.setAttribute("method", "post");
+    form.append(button);
     return form;
 }
 
