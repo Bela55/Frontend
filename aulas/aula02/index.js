@@ -1,0 +1,51 @@
+const root = document.getElementById("root");
+
+/* Componentes da aplicação */
+function Cabecalho() {
+    const header = document.createElement("header");
+    return header;
+}
+
+function Principal() {
+    const main = document.createElement("main");
+    return main;
+}
+
+function Botao(nome) {
+    const button = document.createElement("input");
+    button.setAttribute("type", "submit");
+    button.setAttribute("value", nome);
+    return button;
+}
+
+function Rodape() {
+    const footer = document.createElement("footer");
+    return footer;
+}
+
+function FormLogin() {
+    const form = document.createElement("form");
+    form.setAttribute("action", "");
+    form.setAttribute("method", "post");
+    return form;
+}
+
+/* Páginas da aplicação */
+function Perfil() {
+    root.append(Cabecalho());
+    root.append(Principal());
+}
+
+function Home() {
+    root.append(Cabecalho());
+    root.append(Principal());
+}
+
+function Login() {
+    const main = Principal();
+    main.append(FormLogin());
+    root.append(main);
+    root.append(Rodape());
+}
+
+Login();
