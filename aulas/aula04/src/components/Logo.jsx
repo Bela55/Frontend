@@ -1,11 +1,13 @@
 import './Logo.css'
 
 function Logo(props) {
-    const texto = "Logo da Aplicação";
-    
-    return (
-        <img calssName="Logo" scr={url} alt={texto}/>
-    );
+  return (
+    <img 
+      className="Logo" 
+      scr={props.imagem} 
+      alt={props.texto}
+   />
+  );
 }
 
 export default Logo;
