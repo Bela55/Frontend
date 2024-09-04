@@ -3,8 +3,8 @@ import './Logo.css'
 function Logo(props) {
   return (
     <img 
-      className="Logo" 
-      scr={props.imagem} 
+      className="logo" 
+      src={props.imagem} 
       alt={props.texto}
    />
   );
