@@ -5,14 +5,16 @@ import InputSenha from "../components/InputSenha";
 import BotaoSubmit from "../components/BotaoSubmit";
 import Link from "../components/Link";
 import Rodape from "../components/Rodape";
+import Conteudo from "../components/Conteudo";
 import "./Login.css"
+
 
 function Login() {
   const urlLogo = "https://www.svgrepo.com/show/530621/cocktail.svg";
   const textoLogo = "Logo da Aplicação";
   return (
     <>
-      <main className="login-form">
+      <Conteudo estilo="login-form">
         <Logo imagem={urlLogo} texto={textoLogo} />
         <Titulo texto="Aluno Online"/>
         <InputUsuario />
@@ -20,7 +22,7 @@ function Login() {
         <BotaoSubmit texto="Entrar" />
         <Link texto="Esqueceu a Senha?"/>
         <Link texto=" Criar uma Conta"/>
-      </main>
+      </Conteudo>
       <Rodape />
     </>
   );
