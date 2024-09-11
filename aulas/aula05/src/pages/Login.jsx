@@ -4,7 +4,7 @@ function Login(props) {
     return (
       <>
         <h1>Login</h1>
-        <FormLogin />
+        <FormLogin navegaPara={props.navegaPara} />
       </>
     );
 }
