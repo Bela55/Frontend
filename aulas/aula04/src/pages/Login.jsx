@@ -14,7 +14,7 @@ function Login() {
   const textoLogo = "Logo da Aplicação";
   return (
     <>
-      <Conteudo estilo="login-form">
+      <Conteudo estilo="login-container">
         <Logo imagem={urlLogo} texto={textoLogo} />
         <Titulo texto="Aluno Online"/>
         <InputUsuario />
