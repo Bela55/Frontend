@@ -11,7 +11,7 @@ function Leiaute () {
                <nav>
                   <ul>
                       <li><NavLink to="/Home">Home</NavLink></li>
-                      <li><NavLink to="/Perfil">Perfil</NavLink></li>
+                      <li><NavLink to="/Perfil/1">Perfil</NavLink></li>
                       <li><NavLink to="/">Sair</NavLink></li>
                   </ul>
                 </nav>
