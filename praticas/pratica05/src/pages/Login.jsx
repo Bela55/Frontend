@@ -15,7 +15,7 @@ function Login() {
         <Icone imagem="" texto="Logo da Aplicação" />
         <Titulo texto="Aluno Online" />
         <InputEmail />
-        <InputSenha />
+        <InputSenha /> 
         <Botao texto="Entrar" />
         <Link texto="Esqueceu a Senha?" />
       </Conteudo>
