@@ -1,12 +1,11 @@
 import FormLogin from "./FormLogin";
-import FormPerfil from "./FormPerfil";
 
 function Login () {
     return (
-        <>
+        <main className="login-container">
           <h1>Login</h1>
-          <FormPerfil />
-        </>
+          <FormLogin />
+        </main>
     );
 }
 
