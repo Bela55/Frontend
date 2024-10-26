@@ -8,7 +8,7 @@ function Menu() {
           <NavLink to="/">Listar Contatos</NavLink>
         </li>
         <li>
-          <NavLink to="/">Novo Contato</NavLink>
+          <NavLink to="/novo">Novo Contato</NavLink>
         </li>
       </ul>
     </nav>
