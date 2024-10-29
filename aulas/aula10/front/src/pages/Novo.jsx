@@ -7,7 +7,9 @@ import { criarContato } from "../services/ContatoService";
 
 function Novo() {
   const [erro, setErro] = useState();
+
   const navigate = useNavigate();
+
   const onSalvar = async (data) => {
     const resposta = await criarContato(data);
     if (resposta.sucesso) {
@@ -22,9 +24,9 @@ function Novo() {
     <>
       <Cabecalho />
       <Conteudo>
-        <h2>Novo Contato</h2>
         {erro && <p>{erro}</p>}
-        <Formulario trataEnviar={onSalvar} />
+        <h2>Novo Contato</h2>
+        <Formulario dados={{}} trataEnviar={onSalvar} />
       </Conteudo>
     </>
   );

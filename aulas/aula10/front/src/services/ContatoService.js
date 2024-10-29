@@ -4,7 +4,7 @@ const url = import.meta.env.VITE_URL_API;
 
 function carregarContatos() {
   return axios
-    .get(import.meta.env.VITE_URL_API)
+    .get(url)
     .then((response) => {
       return { sucesso: true, dados: response.data };
     })
@@ -24,23 +24,18 @@ function criarContato(contato) {
     });
 
   // try {
-  //   const response = await axios.post(url, contato);
-  //   return { sucesso: true, dado: response.data }
-  // } catch (erro) {
-  //   return { sucesso: false, message: erro.message }
+  //   const response = await axios.post(url, contato)
+  //   return { sucesso: true, dados: response.data }
+  // } catch (error)  {
+  //   return { sucesso: false, mensagem: error.message }
   // }
 }
 
-function atualizarContato(contato) {
-  axios
-    .put(import.meta.end.URL_API)
-    .then(response)
-    .catch(error);
-}
+function atualizarContato(contato) {}
 
 function removerContato(id) {
   return axios
-    .delete(`${url}/${id}`)
+    .delete(`${url}/${id}`) // http://localhost:3000/contatos/id
     .then((response) => {
       return { sucesso: true, dados: response.data };
     })

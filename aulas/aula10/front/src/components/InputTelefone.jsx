@@ -1,8 +1,7 @@
 function InputTelefone(props) {
   const regras = {
-    required: "Telefone é Obrigatório",
+    required: "Telefone é obrigatório",
   };
-
   return (
     <>
       <label htmlFor="telefone">Telefone</label>

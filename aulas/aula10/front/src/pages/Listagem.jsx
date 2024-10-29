@@ -12,7 +12,7 @@ function Listagem(props) {
           <span>{item.telefone}</span>
           <span>
             <button onClick={() => props.onEditar(item.id)}>Editar</button>
-            <button onClick={() => props.onRemover(item.id)}>Remover Contato</button>
+            <button onClick={() => props.onRemover(item.id)}>Remover</button>
           </span>
         </li>
       ))}

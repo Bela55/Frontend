@@ -4,7 +4,6 @@ import Cabecalho from "../components/Cabecalho";
 import Conteudo from "../components/Conteudo";
 import Listagem from "./Listagem";
 import { carregarContatos, removerContato } from "../services/ContatoService";
-import { set } from "react-hook-form";
 
 function Listar() {
   const [contatos, setContatos] = useState([]);
@@ -13,16 +12,15 @@ function Listar() {
   const navigate = useNavigate();
 
   const onEditar = (id) => {
-    navigate(`/editar/${id}`)
-
-  }
+    navigate(`/editar/${id}`);
+  };
 
   const onRemover = async (id) => {
     const resultado = await removerContato(id);
-    if (resultado.sucesso) { 
+    if (resultado.sucesso) {
       await carregar();
       setErro("");
-    }else {
+    } else {
       setErro(resultado.mensagem);
     }
   };

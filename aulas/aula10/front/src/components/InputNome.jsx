@@ -1,7 +1,7 @@
 function InputNome(props) {
   const regras = {
     required: "Nome é obrigatório",
-  }
+  };
   return (
     <>
       <label htmlFor="nome">Nome</label>
