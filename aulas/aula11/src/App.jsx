@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Erro404 from "./pages/Erro404";
 import Perfil from "./pages/Perfil";
 import Home from "./pages/Home";
+import Registrar from "./pages/Registrar";
 import { AuthContext } from "./contexts/AuthContext";
 
 function App() {
@@ -18,7 +19,10 @@ function App() {
             <Route path="/perfil" element={<Perfil />} />
           </>
         ) : (
-          <Route path="/" element={<Login />} />
+          <>
+            <Route path="/" element={<Login />} />
+            <Route path="/registrar" element={<Registrar />} />
+          </>
         )}
         <Route path="*" element={<Erro404 />} />
       </Routes>
