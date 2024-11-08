@@ -1,3 +1,9 @@
 {
-    "users": []
+  "users": [
+    {
+      "email": "isa@iesb.br",
+      "password": "$2a$10$.cwdtt2zIgxENYtPvki.VONxxJDkUd2fIxp4bfao0elimBLbxHqQm",
+      "id": 1
+    }
+  ]
 }

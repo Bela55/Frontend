@@ -5,6 +5,7 @@ import { AuthContext } from "../contexts/AuthContext";
 function Registrar() {
   const navigate = useNavigate();
   const { registrar } = useContext(AuthContext);
+  
   return (
     <>
       <h1>Registrar</h1>
