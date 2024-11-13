@@ -8,7 +8,7 @@ function Formulario(props) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({ values: props.valores });
   return (
     <>
       <form onSubmit={handleSubmit(props.onEnviar)}>

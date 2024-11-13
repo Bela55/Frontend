@@ -4,6 +4,34 @@
       "email": "isa@iesb.br",
       "password": "$2a$10$.cwdtt2zIgxENYtPvki.VONxxJDkUd2fIxp4bfao0elimBLbxHqQm",
       "id": 1
+    },
+    {
+      "email": "Robs@iesb.br",
+      "password": "$2a$10$aP7O.uCmLuwuKSz.G47cI.7XRgA4YzQb5J2vtOc49cHsV6ZYkjBtS",
+      "id": 2
+    },
+    {
+      "email": "isa@iesb.brooooo",
+      "password": "$2a$10$91s4Ry/vlQnGXY3Fa86kO.YCmx.ZUO5MFtBWnGD2mYAxM/wMpSOYi",
+      "perfil": "aluno",
+      "id": 3
+    },
+    {
+      "email": "karlos@comk.br",
+      "password": "$2a$10$bFgSFcxKCTacTN3j5oXQi..aHqS/RNNj6CJdaUfB6tm3syYXfwJYq",
+      "perfil": "aluno",
+      "id": 4
+    },
+    {
+      "email": "Iago@gmail.com",
+      "password": "$2a$10$UbZ5FyRc0NF9LUFW44KiZeTE9RLMjW3gvPJ.AXottF7fKJvh.K9P2",
+      "perfil": "aluno",
+      "id": 5
+    },
+    {
+      "email": "props@ops.com",
+      "password": "$2a$10$ELkdTAHawuam51A2x5LxJ.H3ZZ5oP.N2pq513IjM./lnZlMG91yQ2",
+      "id": 6
     }
   ]
 }

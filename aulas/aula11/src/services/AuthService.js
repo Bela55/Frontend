@@ -13,9 +13,9 @@ function autenticar(dados) {
       if (error.response) {
         return { sucesso: false, msg: error.response.data };
       } else {
-      return { sucesso: false, msg: error.message };
-    }
-  });
+        return { sucesso: false, msg: error.message };
+      }
+    });
 }
 
 function cadastrar(dados) {
@@ -23,6 +23,7 @@ function cadastrar(dados) {
     .post("http://localhost:3000/register", {
       email: dados.email,
       password: dados.senha,
+      perfil: "aluno",
     })
     .then((response) => {
       return { sucesso: true, dados: response.data };
@@ -32,4 +33,22 @@ function cadastrar(dados) {
     });
 }
 
-export { autenticar, cadastrar };
+function alterar(dados) {
+  return axios
+    .put(`http://localhost:3000/users/${dados.id}`, {
+      email: dados.email,
+      password: dados.senha,
+    })
+    .then((response) => {
+      return { sucesso: true, dados: response.data };
+    })
+    .catch((error) => {
+      if (error.response) {
+        return { sucesso: false, msg: error.response.data };
+      } else {
+        return { sucesso: false, msg: error.message };
+      }
+    });
+}
+
+export { autenticar, cadastrar, alterar };
